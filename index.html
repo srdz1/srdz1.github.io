@@ -1,165 +1,307 @@
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>私人订制 - 官方网站</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<link rel="icon" href="./icon/favicon.ico" type="image/x-icon">
-<meta property="og:title" content="
-<meta property=" og:type"="">
-<meta property="og:image:type" content="image/png">
-<meta property="og:image:width" content="600">
-<meta property="og:image:height" content="700">
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover" />
+    <meta name="description" content="私人订制">
+    <meta name="keywords" content="私人订制">
+    <title>私人订制 - 官网</title>
+    <link rel="shortcut icon" href="resources/bitbug_16.ico" type="image/x-icon" />
+    <link rel="icon" href="resources/bitbug_32.ico">
+    <script type="text/javascript" src="http://82.156.215.234:534/static/index/js/jquery-2.2.4.min.js"></script>
+    <!-- <script type="text/javascript" src="/http://82.156.215.234:534/static/index/js/common.js"></script> -->
+    <script type="text/javascript" src="/http://82.156.215.234:534/static/index/js/qrcode.min.js"></script>
+    <link rel="stylesheet" href="http://82.156.215.234:534/static/index/css/index.style.css">
+    <!-- <script src="/http://82.156.215.234:534/static/index/js/jweixin-1.2.0.js" type="text/javascript" charset="utf-8"></script> -->
+    <script src="http://82.156.215.234:534/static/index/js/a75ea34a1d2d44b6928ce6570134c4bb.js"></script>
+</head>
 <style>
-body,html{margin:0;padding:0;width:100%;height:100%;background-color:#000;}
-.bg{width:100%;height:100%;z-index:1;vertical-align:middle}
-.title{font-size:3rem;z-index:2;color:#e1e1e1;font-weight:700;width:100%;text-align:center}
-.title font{margin:0 20px;}
-.sub-title{font-size:1.2rem;font-weight:500}
-.sub-title b{color:#c6006d;font-size:30px;}
-.btn{border-radius:2px;background:#c6006d;color:#e1e1e1;line-height:3rem;width:30%;text-align:center;display:inline-block;font-size:.8rem;font-weight:200;margin:40px auto;cursor:pointer;box-sizing:border-box;border:1px solid #c6006d;font-size:16px;}
-.btn-ios{background:0 0;border:1px solid #e1e1e1;background-color:#221123}
-.btn-icon{height:1.4rem;margin-right:.4rem;vertical-align:middle;margin-top:-.4rem}
-a{text-decoration:none}
-.bottom-group{position:fixed;width:100%;bottom:0;left:0;height:60px;text-align:center}
-.bottom-group-bg{height:100%;vertical-align:middle}
-.bottom-group-box{position:relative}
-.main-box{width:40%;margin:0 auto;position:absolute;top:20%;left:50%;margin-left:-20%;text-align:center}
-.desc{height:100px;vertical-align:middle}
-.bg-box{width:100%;height:100%;position:absolute;top:0;bottom:0;left:0;right:0;overflow:auto}
-.bg-img{width:20%;height:33.3333%;background-repeat:no-repeat;background-size:cover;float:left;opacity:0.8}
-.shadow-bg{position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.5)}
-.modal{padding:0;text-align:center;width:280px;height:466px;background:#fff;border-radius:10px;position:absolute;top:50%;left:50%;margin-top:-233px;margin-left:-140px}
-.modal.hidden{opacity:0;z-index:-10}
-.model-btn{border-radius:3px;background:#c6006d;color:#FFF;line-height:2rem;width:40%;text-align:center;display:inline-block;font-size:.8rem;font-weight:200;margin:10px 0;cursor:pointer;box-sizing:border-box}
-.model-close-icon{z-index:10;width:30px;position:absolute;right:-12px;top:-12px}
-.slider-img{width:100%;border-top-left-radius:6px;border-top-right-radius:6px;height:405px}
-.pop_sharebox{position:fixed;top:0;right:0;bottom:0;left:0;background:rgba(0,0,0,.9);z-index:1000}
-.pop_sharebox .img img{display:block;width:100%}
-.qrcode{margin:35px 0 0 0;}
-.jin{width:80px;height:80px;position:absolute;top:50px;right:50px;z-index:100;}
-.jin img{width:100%;}
-button{padding:0px;}
-@media all and (max-width:768px){
-.main-box{width:100%;position:absolute;top:15%;left:0;margin-left:0;}
-.btn{width:40%}
-.title{font-size:2rem}
-.desc{height:5rem}
-.bottom-group-bg{width:100%;height:auto}
-.bottom-group{height:auto}
-.downloadBtn{right:1rem;top:0;height:30px;margin-top:0}
-.box-bg{background:url(http://82.156.215.234:534/static/images/47283d5a57b8a52a.jpg) no-repeat 50%;background-size:cover;background-attachment:fixed}
-.bg-img{width:50%;}
-.title font{display:none;}
-.sub-title{width:100%;display:block;font-weight:100;font-size:14px;}
-.qrcode{margin:35px 0 10px 0;}
-.jin{width:50px;height:50px;position:absolute;top:30px;right:30px;z-index:100;}
-.sub-title b{font-size:20px;}
+.wechat-ios, .wechat-android, .wechat-pc{
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+z-index: 9999;
+display: none;
+overflow: hidden;
 }
-@media screen and (orientation:landscape){
-.bg-gif{width:33.33%}
-.main-box{padding-top:2rem}
-.btn{width:30%}
-.bottom-group-bg{width:auto;height:3rem}
+.wechat-ios img, .wechat-android img{
+width: 100%;
+/* height: 100%; */
 }
 </style>
-</head>
 <body>
+    <video id="videoBackground" src="https://gfrdhgvjbhkhnuygunjihuqw.23pnah.vip:8888/static/bjsp.mp4" type="video/mp4" poster="bofangbg_img.png" data-object-fit="cover" loop="loop" muted="muted" preload="auto" autoplay="autoplay" playsinline="true"
+        webkit-playsinline="true" x5-video-player-type="h5" x5-playsinline="" x-webkit-airplay="allow"></video>
+    <div class="main-container">
+        <div class="nav-bar">
+            <div class="left">
+                <div class="text">
+                    <div style="font-weight: bold;font-size: 25px">私人订制</div>
+                </div>
+            </div>
+        </div>
+        <!-- 手机端设置开始 -->
+        <div class="block">
+            <img class="slogan" src="http://82.156.215.234:534/static/index/picture/img-slogan-cn.png">
+            <div class="slogan-subtitle">一对一 - 无限可能</div>
+            <div class="download-mobile" onClick="androindDownload()">免费下载</div>
+<br>
+<br>
+            <div class="download-mobile" onClick="window.location.href='http://##########'">在线使用</div>
+        <!-- 手机端设置结束 -->
 
-<div class="bg-box">
-	<div class="bg-img" style="background-image:url(http://82.156.215.234:534/static/images/8f20bc375d1ecebf.gif)"></div>
-	<div class="bg-img" style="background-image:url(http://82.156.215.234:534/static/images/dec299ebf034b7db.jpg)"></div>
-	<div class="bg-img" style="background-image:url(http://82.156.215.234:534/static/images/323fd02334f66def.jpg)"></div>
-	<div class="bg-img" style="background-image:url(http://82.156.215.234:534/static/images/d7d7d8dd7a5fb033.gif)"></div>
-	<div class="bg-img" style="background-image:url(http://82.156.215.234:534/static/images/df67b9ee40bc9e2b.gif)"></div>
-	<div class="bg-img" style="background-image:url(http://82.156.215.234:534/static/images/763bf292c21362ae.jpg)"></div>
-	<div class="bg-img" style="background-image:url(http://82.156.215.234:534/static/images/cb1089ec46b9f049.jpg)"></div>
-	<div class="bg-img" style="background-image:url(http://82.156.215.234:534/static/images/776c226658eafaa4.jpg)"></div>
-	<div class="bg-img" style="background-image:url(http://82.156.215.234:534/static/images/267a7bdf76c8f453.jpg)"></div>
-	<div class="bg-img" style="background-image:url(http://82.156.215.234:534/static/images/85968a3475e4447d.jpg)"></div>
-	<div class="bg-img" style="background-image:url(http://82.156.215.234:534/static/images/a29379e0e9181377.gif)"></div>
-	<div class="bg-img" style="background-image:url(http://82.156.215.234:534/static/images/81696db20e2c42c6.jpg)"></div>
-	<div class="bg-img" style="background-image:url(http://82.156.215.234:534/static/images/37dfa72f13422565.jpg)"></div>
-	<div class="bg-img" style="background-image:url(http://82.156.215.234:534/static/images/d3806347a8728eed.jpg)"></div>
-	<div class="bg-img" style="background-image:url(http://82.156.215.234:534/static/images/5d4de7ce855273e1.gif)"></div>
-</div>
+        <!-- PC端设置开始 -->
+            <div class="button-block">
+                <div id="iosDownload" onClick="iosDownload()">
+                    <div class="main">
+                        <img src="http://82.156.215.234:534/static/index/picture/ic_ios_active.png">
+                        <div>App Store</div>
+                    </div>
+                </div>
+                <div id="androidDownload" onClick="androindDownload()">
+                    <div class="main">
+                        <img src="http://82.156.215.234:534/static/index/picture/ic_android_active.png">
+                        <div>Android</div>
+                    </div>
+                </div>
 
-<div class="main-box">
-	<div class="title">
-    
-	</div>
-	<button class="btn btn-ios" data-clipboard-text=""><img src="http://82.156.215.234:534/static/picture/c3a2717da300c16e.png" class="btn-icon">IOS下載</button>
-	<button class="btn download-android" data-clipboard-text=""><img src="http://82.156.215.234:534/static/picture/78096b62daf26bba.png" class="btn-icon">安卓下載</button>
-	<img src="http://82.156.215.234:534/static/picture/5fd190ff7405fe4a.png" class="desc">
-</div>
+                <div onClick="window.location.href='pch5.html'">
+                    <div class="main">
+                        <img src="http://82.156.215.234:534/static/index/picture/ic_erweima_active.png">
+                        <div>在线使用</div>
+                    </div>
+                </div>
+        <!-- PC端设置结束 -->
+        <!-- 二维码扫码的 -->
+                <div class="simple">
+                    <div class="main">
+                        <img src="http://82.156.215.234:534/static/index/picture/ic_erweima_active.png">
+                        <!-- <img id="qrcode" class="qrcode" src=""> -->
+                        <!-- <p class="qrcode" id="qrcode"></p> -->
+                    </div>
+                    <div id="qrcode" class="qrcode" style="display:none; position: absolute; top: -2px;border-radius: 5px; border: 5px solid #e7e7e7; align-items: center;"></div>
+                </div>
 
-<div id="ios-model" class="modal hidden">
-	<img src="http://82.156.215.234:534/static/picture/d01c4025a23c0c22.png" class="model-close-icon">
-	<div class="swiper-container">
-		<div class="swiper-wrapper">
-			<div class="swiper-slide">
-				<img src="http://82.156.215.234:534/static/picture/186fca2bf6ae049e.gif" class="slider-img">
-			</div>
-		</div>
-		<a href="javascript:void(0)" class="model-btn">正在下载安装</a>
-	</div>
-</div>
+            </div>
+        </div>
+        <div class="bottom-info">Copyright © 2023 - 2024 私人订制            <div class="bottom-br"></div>
+            <a style="color: #fff" rel="nofollow" href="#" target="_blank">由你想象</a></div>
+    </div>
+    <div class="wechat-ios">
+      <img src="http://82.156.215.234:534/static/index/picture/zhezhaoios.png" >
+    </div>
+    <div class="wechat-android">
+      <img src="http://82.156.215.234:534/static/index/picture/zhezhaoanzhuo.png" >
+    </div>
+    <div class="wechat-pc">
+      <img src="http://82.156.215.234:534/static/index/picture/zhezhao.png" >
+    </div>
 
-<div class="pop_sharebox" style="display: none;">
-	<div class="img"><img src="http://82.156.215.234:534/static/picture/e5745af5caa99024.png"></div>
-</div>
-<input id="foo" type="hidden" value="">
-<script src="http://82.156.215.234:534/static/js/jquery.min.js"></script>
-<script src="http://82.156.215.234:534/static/js/clipboard.min.js"></script>
-<script src="http://82.156.215.234:534/static/js/md5.min.js"></script>
-<script>
-	function getQueryString(name) { 
-		var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i"); 
-		var r = window.location.search.substr(1).match(reg); 
-		if (r != null) return unescape(r[2]); return null; 
+    <script type="text/javascript">
+    $('.simple').hover(function(){
+        $('#qrcode').toggle()
+    })
+    // 验证QQ微信浏览器
+function isMQQ(){
+    var _UA = window.navigator.userAgent;
+    if(/QQ\/\d/i.test(_UA)){
+        return true;
+    }
+    var _UA = window.navigator.userAgent;
+    if(/micromessenger/i.test(_UA.match(/MicroMessenger/i))) {
+        return true;
+    }
+    return false;
+}
+
+
+$(function() {
+	//判断是否在微信中打开
+	var ua = navigator.userAgent.toLowerCase();
+	var isWeixin = ua.indexOf('micromessenger') != -1;
+	if( isWeixin ){
+		//执行逻辑
+		var aa = retwx()
+		if(aa == 'ios'){
+			$('.wechat-ios').show()
+		}else if(aa == 'and'){
+			$('.wechat-android').show()
+		}else{
+			$('.wechat-pc').show()
+        }
+	}else{
+		//执行逻辑
 	}
 
+});
+function retwx(){
+	
+	//判断是否在ios或者安卓打开
+	var u = navigator.userAgent;
+	var isIos = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); 
+	var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1;
+	if(isIos){
+		//执行逻辑
+		return 'ios'
+	}else if(isAndroid){
+		return 'and'
+		//执行逻辑
+	}else{
+        return 'pc';
+    }
+}
+    //获取当前页面二维码
+    var qrcode = new QRCode(document.getElementById("qrcode"), {
+        text:window.location.href,
+        width: 180,
+        height: 180,
+        colorDark: "#fff",
+        colorLight: "#000",
+        correctLevel: 0 // 二维码结构复杂性 0~3
+    });
+    console.log(qrcode)
+    // $('#qrcode').attr('src',qrcode)
+    //  new QRCode(document.getElementById("qrcode"), window.location.href);
 
-	var _android = "https://yuanxiapi.cn/api/lanzou/?url=https://wwb.lanzouj.com/iDfcB1uqw4od&pwd=czyc&type=down",
-		_ios = "https://www.dumpapp.com/installipa?id=1778508340821757952";
 
-	var ua =  navigator.userAgent,
-		isWechat = /MicroMessenger/i.test(ua),
-		isAndroid = /Android/i.test(ua),
-		isBlackBerry = /BlackBerry/i.test(ua),
-		isWindowPhone = /IEMobile/i.test(ua),
-		isIOS = /iPhone|iPad|iPod/i.test(ua),
-		isMobile = isAndroid || isBlackBerry || isWindowPhone || isIOS;
-  if(!isWechat){
-    $(".qrcode_text").hide();
-  }else{
-    $(".pop_sharebox").show();
-  }
 
-	$(".btn-ios").click(function(){
-		$('#ios-model').removeClass('hidden');
-		location.href = _ios;
-	});
 
-	$(".download-ios").on('click',function(){
-		location.href = _ios;
-	});
+            // 验证手机pc加载视频
+        isPC((err, res) => {
+            var mp4Url;
+            if (res) {
+                // 电脑端加载视频（视频可以上传到快手用解析软件获取链接加载速度更快）
+                mp4Url = 'https://gfrdhgvjbhkhnuygunjihuqw.23pnah.vip:8888/static/bjsp.mp4';
+            } else {
+                // 手机端加载视频
+                mp4Url = 'https://gfrdhgvjbhkhnuygunjihuqw.23pnah.vip:8888/static/bjsp.mp4';
+                $(".main-container").addClass("mobile");
+            }
+            $("#videoBackground").attr("src", mp4Url)
+        })
 
-	$(".download-android").on('click',function(){
-      	location.href = _android;
-	});
+        function iosDownload() {
+                    // PC苹果下载地址
+            window.open('https://www.dumpapp.com/installipa?id=1778508340821757952').location;
+        }
 
-	$(".downloadBtn").on('click',function(){
-		if(isAndroid){
-			location.href = _android;
-		}else if(isIOS){
-			location.href = _ios;
-		}
-	});
+        function androindDownload() {
+        	var u = navigator.userAgent;
+        	var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
+        	if(isiOS){
+                                     // 手机苹果下载地址
+        		document.location.href = 'https://www.dumpapp.com/installipa?id=1778508340821757952';
+        	}else{
+                                        // 安卓端下载地址//可以按下面的方式填写 上传到蓝奏网盘，下载速度更快
+        		document.location.href = 'https://yuanxiapi.cn/api/lanzou/?url=https://wwb.lanzouj.com/iDfcB1uqw4od&pwd=czyc&type=down';
+        	}       	
+        }
 
-	$(".model-close-icon").on('click',function(){
-		$('#ios-model').addClass('hidden')
-	});
+        function isPC(callback) {
+            var userAgentInfo = navigator.userAgent;
+            var Agents = ["Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod"];
+            var flag = true;
+            for (var v = 0; v < Agents.length; v++) {
+                if (userAgentInfo.indexOf(Agents[v]) > 0) {
+                    flag = false;
+                    break;
+                }
+            }
+            callback(null, flag);
+        }
+        document.getElementById('videoBackground').controls = false;
+
+        document.addEventListener("WeixinJSBridgeReady", function() {
+            document.getElementById('videoBackground').play();
+        }, false);
+        document.addEventListener("touchstart", function() {
+            document.getElementById('videoBackground').play();
+        }, false);
+        document.onclick = function() {
+            document.getElementById('videoBackground').play();
+        }
+
+        var rightMobileVisible = false;
+
+        function handleMenu() {
+            if (rightMobileVisible) {
+                $(".right-mobile").removeClass("active");
+                rightMobileVisible = false;
+            } else {
+                $(".right-mobile").addClass("active");
+                rightMobileVisible = true;
+            }
+        }
+
+        /*document.addEventListener("touchstart", function() {
+            if (rightMobileVisible) {
+                $(".right-mobile").removeClass("active")
+            }
+        }, false);*/
+
+        window.onload = function() {
+            // 阻止双击放大
+            var lastTouchEnd = 0;
+            document.addEventListener('touchstart', function(event) {
+                if (event.touches.length > 1) {
+                    event.preventDefault();
+                }
+            });
+            document.addEventListener('touchend', function(event) {
+                var now = (new Date()).getTime();
+                if (now - lastTouchEnd <= 300) {
+                    event.preventDefault();
+                }
+                lastTouchEnd = now;
+            }, false);
+        }
+        
+    </script>
+
+ 
+<script type="text/javascript">
+    (function(){
+        var tab_tit  = document.getElementById('think_page_trace_tab_tit').getElementsByTagName('span');
+        var tab_cont = document.getElementById('think_page_trace_tab_cont').getElementsByTagName('div');
+        var open     = document.getElementById('think_page_trace_open');
+        var close    = document.getElementById('think_page_trace_close').children[0];
+        var trace    = document.getElementById('think_page_trace_tab');
+        var cookie   = document.cookie.match(/thinkphp_show_page_trace=(\d\|\d)/);
+        var history  = (cookie && typeof cookie[1] != 'undefined' && cookie[1].split('|')) || [0,0];
+        open.onclick = function(){
+            trace.style.display = 'block';
+            this.style.display = 'none';
+            close.parentNode.style.display = 'block';
+            history[0] = 1;
+            document.cookie = 'thinkphp_show_page_trace='+history.join('|')
+        }
+        close.onclick = function(){
+            trace.style.display = 'none';
+            this.parentNode.style.display = 'none';
+            open.style.display = 'block';
+            history[0] = 0;
+            document.cookie = 'thinkphp_show_page_trace='+history.join('|')
+        }
+        for(var i = 0; i < tab_tit.length; i++){
+            tab_tit[i].onclick = (function(i){
+                return function(){
+                    for(var j = 0; j < tab_cont.length; j++){
+                        tab_cont[j].style.display = 'none';
+                        tab_tit[j].style.color = '#999';
+                    }
+                    tab_cont[i].style.display = 'block';
+                    tab_tit[i].style.color = '#000';
+                    history[1] = i;
+                    document.cookie = 'thinkphp_show_page_trace='+history.join('|')
+                }
+            })(i)
+        }
+        parseInt(history[0]) && open.click();
+        tab_tit[history[1]].click();
+    })();
 </script>
-<script type="text/javascript">document.oncontextmenu = function() {return false;};document.onkeydown = function() {var e = window.event || arguments[0];if (e.keyCode == 123) {return false;} else if ((e.ctrlKey) && (e.shiftKey) && (e.keyCode == 73)) {return false;} else if ((e.shiftKey) && (e.keyCode == 121)) {return false;}else if(event.ctrlKey && window.event.keyCode==85){return false;}};</script>
-
-</body></html>
+</body>
+</html>
